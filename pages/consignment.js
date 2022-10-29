@@ -278,7 +278,7 @@ export default function Home() {
         
               
               {/* table1 */}
-               <h4 className="">Shipment Information</h4>
+               
               <div className="boda1-sm pb-5">
               <Table1 />
               </div> 
