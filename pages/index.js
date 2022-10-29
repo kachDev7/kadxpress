@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/rob.png" />
       </Head>
 
-      <main className={styles.main}>
+      <main className="">
         kadxpress property here!
       </main>
 

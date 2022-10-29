@@ -14,7 +14,7 @@ setInterval(() => {
 }, 1000)
   // Print Page
   function printPage() {
-    window.print()
+   
    }
 
 export default function Home() {
