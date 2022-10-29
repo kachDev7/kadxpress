@@ -4,18 +4,7 @@ import { useEffect, useState } from 'react'
 import Script from 'next/script'
 import { useRouter } from 'next/router';
 
-var counter = 0;
-setInterval(() => {
-    counter++
-    console.log(counter)
-    if (counter===3){
-        printPage();
-    }
-}, 1000)
-  // Print Page
-  function printPage() {
-   
-   }
+
 
 export default function Home() {
     // State variables
@@ -76,6 +65,7 @@ export default function Home() {
     // Get all Users
     const populateUsers = async () => {
         const number1 = localStorage.getItem('number1')
+        console.log(number1, localStorage.getItem('number1'))
         console.log(number1)
         const res = await fetch('https://dak-server.vercel.app/api/quote/getItem', {
                 method: 'POST',
@@ -95,10 +85,16 @@ export default function Home() {
         }
       }
 
-    useEffect(() => {
-            populateUsers();
-    }, [])
+useEffect(() => {
+  populateUsers();     
+}, [])
 
+useEffect(() => {
+// Print Page
+  setTimeout(() => {
+    window.print()
+  }, 3000)
+}, [])
 
 
         // Waiter

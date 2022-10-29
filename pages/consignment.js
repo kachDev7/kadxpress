@@ -5,18 +5,8 @@ import Script from 'next/script'
 import { useRouter } from 'next/router';
 
 
-var counter = 0;
-for(let i = 0; i<4; i++){
-  counter++
-  console.log(counter)
-  if (counter===3){
-      printPage();
-  }
-}
-  // Print Page
-  function printPage() {
-    // window.print()
-   }
+
+
 
 
 export default function Home() {
@@ -96,8 +86,14 @@ export default function Home() {
       }
 
     useEffect(() => {
-            populateUsers();
-            
+            populateUsers();     
+    }, [])
+
+    useEffect(() => {
+  // Print Page
+      setTimeout(() => {
+        window.print()
+      }, 3000)
     }, [])
 
 
