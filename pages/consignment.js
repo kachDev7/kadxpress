@@ -69,13 +69,13 @@ export default function Home() {
     
         const res1 = await fetch('https://dak-server.vercel.app/api/update/get')
         const num = await res1.json()
-      console.log(num)
+      console.log(num.item)
 
         const res = await fetch('https://dak-server.vercel.app/api/quote/getItem', {
                 method: 'POST',
                 headers: {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
-                    "number" : num.number
+                    "number" : num.item
                 })
             })
         if(res.ok){
