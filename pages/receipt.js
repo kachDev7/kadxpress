@@ -64,14 +64,14 @@ export default function Home() {
 
     // Get all Users
     const populateUsers = async () => {
-        const number1 = localStorage.getItem('number1')
-        console.log(number1, localStorage.getItem('number1'))
+        const number = localStorage.getItem('number')
+        console.log(number1, localStorage.getItem('number'))
         console.log(number1)
         const res = await fetch('https://dak-server.vercel.app/api/quote/getItem', {
                 method: 'POST',
                 headers: {'Content-Type' : 'application/json'},
                 body: JSON.stringify({
-                    "number" : number1
+                    "number" : number
                 })
             })
         if(res.ok){
