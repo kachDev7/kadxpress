@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        kadxpress property
+        kadxpress property here!
       </main>
 
       
