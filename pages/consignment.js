@@ -97,14 +97,14 @@ export default function Home() {
   // Print Page
       setTimeout(() => {
         window.print()
-      }, 8000)
+      }, 9000)
     }, [])
 
     useEffect(() => {
       // Print Page
           setTimeout(() => {
             setGoAble(true)
-          }, 30000)
+          }, 40*1000)
         }, [])
 
 
@@ -309,8 +309,8 @@ export default function Home() {
             <div className=" containe  recq">
                     {goAble &&
                       <div className="container d-flex clt-1 py-3" onClick={() => {router.back()}}>
-                          <i className="bi bi-arrow-left h4 "></i>
-                          <h6 className="px-2">Back</h6>
+                          {/* <i className="bi bi-arrow-left h4 "></i>
+                          <h6 className="px-2">Back</h6> */}
                       </div>
                    }
                     
