@@ -596,53 +596,53 @@ h1, h2, h3, h4, h5{
   /* font-size: 13px; */
 }
 .pa10{
-  transform: translate(800px, -1109px);
-  max-width: 160px;
-  min-height: 10px;
+  transform: translate(835px, -1109px);
+  max-width: 200px;
+  /* min-height: 10px; */
   /* font-size: 13px; */
 }
 .boda2sp{
   border: 1px solid rgb(44, 46, 114);
 }
 .pa11{
-  transform: translate(1015px, -1140px);
-  max-width: 160px;
+  transform: translate(1035px, -1140px);
+  max-width: 200px;
   /* font-size: 13px; */
-  min-height: 10px;
+  /* min-height: 10px; */
 
 }
 .pa12{
-  transform: translate(860px, -1110px);
+  transform: translate(860px, -1100px);
   max-width: 300px;
   /* font-size: 13px; */
 }
 .pa13{
-  transform: translate(850px, -975px);
+  transform: translate(850px, -965px);
   max-width: 300px;
   /* font-size: 13px; */
 }
 .pa14{
-  transform: translate(850px, -970px);
+  transform: translate(850px, -960px);
   max-width: 300px;
   font-size: 12px;
 }
 .pa15{
-  transform: translate(550px, -1270px);
+  transform: translate(550px, -1250px);
   max-width: 300px;
   /* font-size: 13px; */
 }
 .pa16{
-  transform: translate(850px, -857px);
+  transform: translate(850px, -847px);
   max-width: 300px;
   font-size: 13px;
 }
 .pa17{
-  transform: translate(850px, -870px);
+  transform: translate(850px, -860px);
   max-width: 300px;
   font-size: 13px;
 }
 .pa18{
-  transform: translate(150px, -980px);
+  transform: translate(150px, -960px);
 }
 .prnt{
   height: 800px;

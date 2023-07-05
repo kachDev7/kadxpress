@@ -324,18 +324,18 @@ export default function Home() {
                             <img src="/rec2.jpg" alt="" srcset="" height={700} width={1200} className='boda2sp'/>
                             <hr />
                           </div>
-                          <p className='pa1 fw-bold'><span className="clt-1">Sender's Name: </span> {tin.shipper.name}</p>
+                          <p className='pa1 fw-bold'><span className="clt-1">Name: </span> {tin.shipper.name}</p>
                           <p className='pa2 fw-bold'><span className="clt-1">Address: </span> {tin.shipper.address}</p>
                           <p className='pa3 fw-bold'><span className="clt-1">Email: </span> {tin.shipper.email}</p>
                           <p className='pa4 fw-bold'><span className="clt-1">Phone: </span> {tin.shipper.phone}</p>
 
-                          <p className='pa5 fw-bold'><span className="clt-1">Receiver's Name: </span> {tin.reciever.name}</p>
+                          <p className='pa5 fw-bold'><span className="clt-1"> Name: </span> {tin.reciever.name}</p>
                           <p className='pa6 fw-bold'><span className="clt-1">Address: </span> {tin.reciever.address}</p>
                           <p className='pa7 fw-bold'><span className="clt-1">Email: </span>{tin.reciever.email}</p>
                           <p className='pa8 fw-bold'><span className="clt-1">Phone: </span> {tin.reciever.phone}</p>
                           <h3 className='pa9 fw-bold clt-1'>{tin.number}</h3>
-                          <h6 className='pa10 text-center clt-1'>{tin.origin}</h6>
-                          <h6 className='pa11  text-center clt-1'>{tin.dest}</h6>
+                          <h6 className='pa10  clt-1'>{tin.origin}</h6>
+                          <h6 className='pa11   clt-1'>{tin.dest}</h6>
                           <p className='pa12 fw-bold'><span className="clt-1">ITEM: </span> {tin.product} ({tin.qty})</p>
                           <p className='pa13 fw-bold'><span className="clt-1">WEIGHT: </span> {tin.weight}</p>
                           <p className='pa14'>
