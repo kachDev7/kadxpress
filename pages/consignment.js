@@ -97,7 +97,7 @@ export default function Home() {
   // Print Page
       setTimeout(() => {
         window.print()
-      }, 6000)
+      }, 8000)
     }, [])
 
     useEffect(() => {
