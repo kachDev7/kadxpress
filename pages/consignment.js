@@ -104,7 +104,7 @@ export default function Home() {
       // Print Page
           setTimeout(() => {
             setGoAble(true)
-          }, 12000)
+          }, 30000)
         }, [])
 
 
