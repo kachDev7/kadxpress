@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className="">
         kadxpress property here!
+        Goto <Link href="https://kadxpress.com" legacyBehavior>Home</Link>
       </main>
 
       
