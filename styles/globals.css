@@ -547,6 +547,112 @@ h1, h2, h3, h4, h5{
 .f3{
   font-size: 1.3rem;
 }
+/* Receipt */
+.pa1{
+  transform: translate(80px, -630px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa2{
+  transform: translate(80px, -600px);
+  max-width: 300px;
+  font-size: 13px;
+  min-height: 40px;
+}
+.pa3{
+  transform: translate(80px, -580px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa4{
+  transform: translate(80px, -575px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa5{
+  transform: translate(80px, -560px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa6{
+  transform: translate(80px, -570px);
+  max-width: 300px;
+  font-size: 13px;
+  min-height: 40px;
+}
+.pa7{
+  transform: translate(80px, -578px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa8{
+  transform: translate(80px, -580px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa9{
+  transform: translate(510px, -950px);
+  max-width: 300px;
+  /* font-size: 13px; */
+}
+.pa10{
+  transform: translate(800px, -1109px);
+  max-width: 160px;
+  min-height: 10px;
+  /* font-size: 13px; */
+}
+.boda2sp{
+  border: 1px solid rgb(44, 46, 114);
+}
+.pa11{
+  transform: translate(1015px, -1140px);
+  max-width: 160px;
+  /* font-size: 13px; */
+  min-height: 10px;
+
+}
+.pa12{
+  transform: translate(860px, -1110px);
+  max-width: 300px;
+  /* font-size: 13px; */
+}
+.pa13{
+  transform: translate(850px, -975px);
+  max-width: 300px;
+  /* font-size: 13px; */
+}
+.pa14{
+  transform: translate(850px, -970px);
+  max-width: 300px;
+  font-size: 12px;
+}
+.pa15{
+  transform: translate(550px, -1270px);
+  max-width: 300px;
+  /* font-size: 13px; */
+}
+.pa16{
+  transform: translate(850px, -857px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa17{
+  transform: translate(850px, -870px);
+  max-width: 300px;
+  font-size: 13px;
+}
+.pa18{
+  transform: translate(150px, -980px);
+}
+.prnt{
+  height: 800px;
+}
+.recq{
+  width: 1280px;
+  margin-left: 120px;
+}
+
+/*  */
 
 
 

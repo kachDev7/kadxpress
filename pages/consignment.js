@@ -56,6 +56,7 @@ export default function Home() {
 
     const[tfReturned, setTfReturned] = useState(false)
     const[tfSuccess, setTfSuccess] = useState(false)
+    const [goAble, setGoAble] = useState(false);
 
 
     const router = useRouter();
@@ -96,8 +97,15 @@ export default function Home() {
   // Print Page
       setTimeout(() => {
         window.print()
-      }, 3000)
+      }, 6000)
     }, [])
+
+    useEffect(() => {
+      // Print Page
+          setTimeout(() => {
+            setGoAble(true)
+          }, 12000)
+        }, [])
 
 
 
@@ -296,20 +304,54 @@ export default function Home() {
       }
 
     //Body
-    const Body = () => {
+    const Body = ({ data }) => {
         return(
-            <div className="container px-3">
-                   
-                    <div className="container d-flex clt-1 py-3" onClick={() => {router.back()}}>
-                        <i className="bi bi-arrow-left h4 "></i>
-                        <h6 className="px-2">Back</h6>
-                    </div>
+            <div className=" containe  recq">
+                    {goAble &&
+                      <div className="container d-flex clt-1 py-3" onClick={() => {router.back()}}>
+                          <i className="bi bi-arrow-left h4 "></i>
+                          <h6 className="px-2">Back</h6>
+                      </div>
+                   }
                     
                     <div className=" mb-4">
                         <div className="d-flex jab">
-                            <h4 className="">Shipment Receipt</h4>
+                            {/* <h4 className="">Shipment Receipt</h4> */}
                         </div>
-                        <TrackSuit data={tin} />
+                        {/* <TrackSuit data={tin} /> */}
+                        <div className="prnt ">
+                          <div className="d-g-pc py-5 ">
+                            <img src="/rec2.jpg" alt="" srcset="" height={700} width={1200} className='boda2sp'/>
+                            <hr />
+                          </div>
+                          <p className='pa1 fw-bold'><span className="clt-1">Sender's Name: </span> {tin.shipper.name}</p>
+                          <p className='pa2 fw-bold'><span className="clt-1">Address: </span> {tin.shipper.address}</p>
+                          <p className='pa3 fw-bold'><span className="clt-1">Email: </span> {tin.shipper.email}</p>
+                          <p className='pa4 fw-bold'><span className="clt-1">Phone: </span> {tin.shipper.phone}</p>
+
+                          <p className='pa5 fw-bold'><span className="clt-1">Receiver's Name: </span> {tin.reciever.name}</p>
+                          <p className='pa6 fw-bold'><span className="clt-1">Address: </span> {tin.reciever.address}</p>
+                          <p className='pa7 fw-bold'><span className="clt-1">Email: </span>{tin.reciever.email}</p>
+                          <p className='pa8 fw-bold'><span className="clt-1">Phone: </span> {tin.reciever.phone}</p>
+                          <h3 className='pa9 fw-bold clt-1'>{tin.number}</h3>
+                          <h6 className='pa10 text-center clt-1'>{tin.origin}</h6>
+                          <h6 className='pa11  text-center clt-1'>{tin.dest}</h6>
+                          <p className='pa12 fw-bold'><span className="clt-1">ITEM: </span> {tin.product} ({tin.qty})</p>
+                          <p className='pa13 fw-bold'><span className="clt-1">WEIGHT: </span> {tin.weight}</p>
+                          <p className='pa14'>
+                            Each registered consignment delivery shall be covered by a CMR Consignment Note drawn by KADXPRESS LOGISTICS based on information provided by <strong className='fw-bold'>{tin.shipper.name}</strong> (sender), according to Articles 6 and 7 of the CMR Convention. A copy of the consignment Note shall be given by delivery officer to <strong className='fw-bold'>{tin.reciever.name}</strong> (receiver) and shall be conclusive evidence of collection of the item described therein.  
+                          </p>
+                          <div className="pa15">
+                            <img alt='Barcode Generator TEC-IT' height={50} width={130}
+                                src={`https://barcode.tec-it.com/barcode.ashx?data=${tin.number}&code=Code128&translate-esc=on`} />
+                          </div>
+                          <p className='pa16'><span className="clt-1 fw-bold">Departure Date: </span> {tin.delDate}</p>
+                          <p className='pa17'><span className="clt-1 fw-bold">Pickup Date: </span> {tin.pickDate}</p>
+                          <div className="pa18">
+                            <img src="/sign.jpg" alt="" srcset="" height={70} width={150} />
+                          </div>
+                        </div>
+
                     </div> 
             </div>
         )
